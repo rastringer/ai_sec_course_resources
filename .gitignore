@@ -1,6 +1,7 @@
 # Data downloads
 MNIST/
 data/
+rag_corpus/
 
 # Model files
 *pth
