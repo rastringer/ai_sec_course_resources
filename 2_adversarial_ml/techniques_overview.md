@@ -6,8 +6,7 @@ Attacking ML models, data pipelines and deployments is a vast, exciting and uniq
 
 * Evasion: Since models are typically non-deterministic, there is scope for what are broadly called 'evasion attacks'. This means we feed modified inputs at inference time to fool deployed models. We will cover some examples of this attack vector shortly. This image may look familiar to anyone interested in adversarial ML:
 
-<img src="https://github.com/rastringer/ai_sec_course_resources/blob/main/2_adversarial_ml/images/panda_gibbon.png?raw=true" width="600" alt="Panda-Gibbon Image">
-
+<img src="https://github.com/rastringer/ai_sec_course_resources/blob/main/2_adversarial_ml/images/panda_gibbon.png?raw=true" width="500" alt="Panda-Gibbon Image">
 
 
 Image from *[Explaining and Harnessing Adversarial Examples](https://arxiv.org/pdf/1412.6572)*, by Goodfellow, Shlens & Szegedy.
