@@ -8,6 +8,8 @@ Attacking ML models, data pipelines and deployments is a vast, exciting and uniq
 
 <img src="https://github.com/rastringer/ai_sec_course_resources/blob/main/2_adversarial_ml/images/panda_gibbon.png?raw=true" width="600" alt="Panda-Gibbon Image">
 
+
+
 Image from *[Explaining and Harnessing Adversarial Examples](https://arxiv.org/pdf/1412.6572)*, by Goodfellow, Shlens & Szegedy.
 
 * Extraction: attackers can steal proprietary models through strategically quering deployments with specific, iterative inputs to elicit the weights, decision boundaries and other tendencies of the model. This can mean theft of intellectual property, and also allows attackers to use the stolen model to craft further attacks.
