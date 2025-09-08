@@ -1,6 +1,4 @@
-# Welcome
-
-## The Course
+# Welcome!
 
 This is a course to teach developers, whether hobbyist, students, or professionals, enough about machine learning (ML) and ML security that they can contribute to the field and successfully help to mitigate AI risk in their studies, projects and careers.
 
@@ -12,7 +10,7 @@ It's recommended that participants have at least one year of programming experie
 
 No, the course was designed to be as accessible as possible to developers in a variety of fields. If you work as a data scientist, SRE, web developer, infrastructure, security engineer or other roles, the material helps build and intuitive understanding of ML before we go on to more complex topics. 
 
-If you are already an experienced ML engineer, you are welcome to skip the 'Intro to ML' module.
+If you are already an experienced ML engineer and wish to learn more about the security side of the field, you're welcome to skip the 'Intro to ML' module.
 
 ## What does it cost?
 
@@ -24,5 +22,6 @@ There are many brilliant and useful resources out there. The focus of this cours
 
 If you're more interested in AI safety fields such as alignment, governance, policy or interpretability, I recommend:
 
-[Arena](https://www.arena.education/) for extensive coverage of machine learning and mech interp.
-[Blue Dot Impact's](https://bluedot.org/) governance, alignment and other courses.
+* [Arena](https://www.arena.education/) for extensive coverage of machine learning and mech interp.
+
+* [Blue Dot Impact's](https://bluedot.org/) governance, alignment and other courses.
