@@ -1,6 +1,6 @@
 # Welcome!
 
-This is a course to teach developers, whether hobbyist, students, or professionals, enough about machine learning (ML) and ML security that they can contribute to the field and successfully help to mitigate AI risk in their studies, projects and careers.
+This is a course to teach developers - whether hobbyist, students, or professionals - enough about machine learning (ML) and ML security that they can contribute to the field and successfully help to mitigate AI risk in their studies, projects and careers.
 
 ## What are the prerequisites?
 
