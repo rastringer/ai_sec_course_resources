@@ -3,7 +3,7 @@
 
 Hopefully there have been sections of this course you found interesting or applicable to something you are working on, or both!
 
-Now begins the capstone phase where we put into practice some of the techniques we have learned. This will help to solidify concepts, build skills, understanding, and can be a helpful portfolio item for your next job, studies or career advancement.
+Now begins the capstone phase where we put into practice some of the techniques we have learned and build a project of your choice. This will help to solidify concepts, build skills, understanding, and can be a helpful portfolio item for your next job, studies or career advancement.
 
 # How to begin
 
