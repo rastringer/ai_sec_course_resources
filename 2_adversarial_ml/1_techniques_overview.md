@@ -1,5 +1,3 @@
-# Adversarial ML
-
 Attacking ML models, data pipelines and deployments is a vast, exciting and unique field. We will explore some ways in which ML systems can be vulnerable before looking at how to approach red teaming and security for AI. While adversarial ML examples and results certainly eye-catching, we should bear in mind that the entire system in which AI is deployed should be evaluated for security. Both traditional offensive security methods (gaining unwarranted access to and priviledges in a system) and ML-specific attacks should be considered when evaluating the security of AI applications.
 
 ## Attacking Models

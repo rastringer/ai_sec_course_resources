@@ -1,5 +1,3 @@
-# Exercises
-
 Time: 1-2 hrs
 
 Choose one:

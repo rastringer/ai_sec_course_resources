@@ -1,6 +1,4 @@
-# Exercises
-
-Now that we are already training models, have some fun!
+Now that we are already training models, let's have some fun.
 
 Time: 1hr. This may seem like a short amount of time, however, by capping the exercise to one hour we hope to avoid rabbit holes and encourage simplicity.  
 

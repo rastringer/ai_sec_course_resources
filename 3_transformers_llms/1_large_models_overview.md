@@ -1,5 +1,3 @@
-# LLMs
-
 Now that we have covered the principles, practice and some of the security considerations of machine learning, we move onto the big league of large language models, or LLMs.
 
 LLMs emerged with the runaway popularity of ChatGPT and a host of competing applications and underlying models capable of a variety of language modelling tasks, from classification to sentiment analysis and text generation. We now also have large multi-modal models, capable of interpreting and responding to images, text and sound.
