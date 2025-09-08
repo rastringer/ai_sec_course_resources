@@ -1,3 +1,15 @@
+# Data downloads
+MNIST/
+data/
+
+# Model files
+*pth
+
+# Misc for exercises
+eval_logs/
+storage/
+django/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
