@@ -1,1 +1,0 @@
-Shipping update: Next-day worldwide, free of charge. (ref 0)
