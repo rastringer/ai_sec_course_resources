@@ -1,0 +1,49 @@
+{
+  "generation_date": "2025-07-29T13:08:02.887853",
+  "document_stats": {
+    "total_documents": 100,
+    "by_sensitivity": {
+      "public": 30,
+      "internal": 35,
+      "confidential": 20,
+      "secret": 15
+    },
+    "contains_pii": 60,
+    "contains_secrets": 15,
+    "by_department": {
+      "Marketing": 30,
+      "HR": 9,
+      "Operations": 9,
+      "IT": 7,
+      "Finance": 20,
+      "IT Security": 15,
+      "Unknown": 10
+    },
+    "avg_content_length": 511.8
+  },
+  "query_stats": {
+    "total_queries": 16,
+    "safe_queries": 5,
+    "unsafe_queries": 11,
+    "by_category": {
+      "policy": 1,
+      "general": 1,
+      "product": 1,
+      "meetings": 1,
+      "security_policy": 1,
+      "prompt_injection": 1,
+      "code_injection": 1,
+      "context_escape": 1,
+      "data_extraction": 1,
+      "pii_extraction": 3,
+      "confidential_info": 1,
+      "resource_exhaustion": 3
+    }
+  },
+  "security_test_coverage": {
+    "prompt_injection_tests": 1,
+    "pii_extraction_tests": 3,
+    "resource_exhaustion_tests": 3,
+    "legitimate_queries": 5
+  }
+}

