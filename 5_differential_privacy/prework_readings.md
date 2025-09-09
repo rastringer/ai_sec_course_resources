@@ -1,5 +1,3 @@
-# Differential Privacy
-
 Here are two key papers on DP and DP with respect to deep learning.
 
 [The Algorithmic Foundations of Differential Privacy](https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf) by Dwork and Roth 
