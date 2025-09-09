@@ -38,7 +38,3 @@ To evaluate beyond performance and check for potentially damaging behaviour, we 
 * Capability overhang - Measuring gaps between what systems can do versus what we can reliably control or understand about their behavior.
 * Truthfulness and calibration - Testing whether systems provide accurate information and properly express uncertainty about their knowledge.
 
-
-## Further discussion of AI safety / alignment etc
-
-[AI tools used by English councils downplay women's health issues, study finds](https://uk.finance.yahoo.com/news/ai-tools-used-english-councils-050042574.html) 
