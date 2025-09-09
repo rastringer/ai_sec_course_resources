@@ -1,8 +1,8 @@
 # Welcome!
 
-This is a course to teach developers - whether hobbyist, students, or professionals - enough about machine learning (ML) and ML security that they can contribute to the field and successfully help to mitigate AI risk in their studies, projects and careers.
+This goal of this course is to teach developers - whether hobbyist, students, or professionals - enough about machine learning (ML) and ML security that they can contribute to the field and successfully help to mitigate AI risk in their studies, projects and careers.
 
-<img src="https://github.com/rastringer/ai_sec_course_resources/blob/main/Course Introduction/images/ai_landscape.png?raw=true" width="500" alt="AI Landscape Image">
+<img src="https://github.com/rastringer/ai_sec_course_resources/blob/main/Course Introduction/images/ai_landscape.png?raw=true" width="200" align="right" alt="AI Landscape Image">
 
 ## What are the prerequisites?
 

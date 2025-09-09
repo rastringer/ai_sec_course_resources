@@ -1,5 +1,7 @@
 Now that we have covered the principles, practice and some of the security considerations of machine learning, we move onto the big league of large language models, or LLMs.
 
+<img src="https://github.com/rastringer/ai_sec_course_resources/blob/main/3_transformers_llms/images/large_models.png?raw=true" width="200" align="right" alt="Large Models Image">
+
 LLMs emerged with the runaway popularity of ChatGPT and a host of competing applications and underlying models capable of a variety of language modelling tasks, from classification to sentiment analysis and text generation. We now also have large multi-modal models, capable of interpreting and responding to images, text and sound.
 
 In this module, we will build and understanding of how LLMs are created, before we turn our attention in the next module to their safety and security risks.
