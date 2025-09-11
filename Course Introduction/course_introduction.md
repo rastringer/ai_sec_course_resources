@@ -1,4 +1,4 @@
-## Welcome!
+### Welcome 
 
 This goal of this course is to teach developers - whether hobbyists, students, or professionals - enough about machine learning (ML) and ML security that they can contribute to the field and successfully help to mitigate AI risk in their studies, projects and careers.
 
@@ -18,7 +18,7 @@ If you are already an experienced ML engineer and wish to learn more about the s
 
 The course is completely free and released under the Creative Commons BY SA 4.0 [license](https://creativecommons.org/licenses/by-sa/4.0/). We are grateful to Open Philanthropy for generously sponsoring this work.
 
-### Why take this over other courses?
+#### Why take this over other courses?
 
 There are many brilliant and useful resources out there. The focus of this course is ML security with a lighter treatment of the topic of *safety*, since one field can generally cause issues for the other. It is hands-on, with practical implementation of just about every theory discussed in the course, so it's suitable for those who like to experiment, write code, and work on their own projects.
 
