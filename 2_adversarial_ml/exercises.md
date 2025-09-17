@@ -1,4 +1,4 @@
-Explore one of these research directions for 1-2 hours:
+Explore one of these research ideas for 1-2 hours:
 
 <img src="https://github.com/rastringer/ai_sec_course_resources/blob/main/2_adversarial_ml/images/adversarial_ml.png?raw=true" width="250" align="right" alt="Adversarial ML Image">
 
