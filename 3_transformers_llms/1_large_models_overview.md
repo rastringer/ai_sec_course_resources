@@ -11,15 +11,19 @@ In this module, we will build and understanding of how LLMs are created, before 
 In 2017, researchers published the now iconic "Attention Is All You Need" [paper](https://arxiv.org/pdf/1706.03762). 
 
 Prior to the transfomer architecture, language modelling was limited by constraints inherent in recurrent models such as RNNs (recurrent neural networks) and LSTMs (long short-term memory). These constraints included:
+
 * Processing text sequentially, word by word, which caused bottlenecks and inhibited learning long-range depencencies. This is also called the 'vanishing gradients' problem that manifests over long sequences.
-  * For example, the model may not correlate effectively a dog mentioned in the first paragraph and the sound of barking outside in the fifth
+
+  * For example, the model may not correlate effectively a dog mentioned in the first paragraph and the sound of barking outside in the fifth.
 
 Transformers attended to all positions in a sequence through *attention*, or *self-attention*, which allowed for better long-range understanding, more efficient training and better modelling of complex linguistic relationships. The architecture enabled:
+
 * Improved performance on language tasks
 * Faster training times due to parallelization
 * The foundation for large language models
 
 In the following notebook, we will examine:
+
 * Attention and how it fits into the broader transformer architecture
 * How LLMs are trained
 
@@ -42,24 +46,19 @@ $$\text{MaskedAttention}(Q, K, V, M) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k
 
 ### Encoders and Decoders
 
-Encoder-Decoder (examples include original Transformer, T5, BART):
+#### Encoder-decoder models
 
-* Encoder processes input sequence
-* Decoder generates output sequence
-* Used for translation, summarization
+In encoder-encoder transformer models, an encoder processes and understands input sequences. A decoder then generates output sequences (eg translated text). Both components use self-attention mechanisms to capture relationships between elements in the sequences. Examples of encoder-decoder models include the original Transformer, T5, BART.
 
 
-Encoder-Only (such as BERT):
+#### Encoder-Only 
 
-* Only encoder stack
-* Good for classification, understanding tasks
+Encoder-only models process input sequences using self-attention to build rich representations of the data. They are typically used for tasks such as classification, sentiment analysis and generating embeddings, rather than for generation. Well-known examples include BERT.
 
+#### Decoder-Only 
 
-Decoder-Only (GPT, nanoGPT):
-
-* Only decoder stack
-* Autoregressive generation
-* Good for text generation, completion
+The decoder-only model generates sequences by predicting the next token based on previous tokens, using self-attention mechanisms. These models are usually used for autoregressive text generation, language modelling and completion tasks. 
+Famous examples include GPT.
 
 ## Safety Considerations
 
