@@ -1,0 +1,100 @@
+#@title 🧩 Load & Run External Quiz (Jupyter + Colab compatible)
+import json, os, sys
+from IPython.display import display, Markdown
+
+# Try to use ipywidgets for a nicer UI; fall back to input() if not available
+try:
+    import ipywidgets as widgets
+    HAVE_WIDGETS = True
+except Exception:
+    HAVE_WIDGETS = False
+
+QUIZ_PATH = "ml_quiz.json"  # change if you store it elsewhere or load from a URL
+
+def load_quiz(path=QUIZ_PATH):
+    if not os.path.exists(path):
+        raise FileNotFoundError(f"Quiz file not found at '{path}'. Make sure ml_quiz.json is next to the notebook.")
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+quiz = load_quiz()
+title = quiz.get("title", "Quiz")
+questions = quiz["questions"]
+bonus = quiz.get("bonus", [])
+
+display(Markdown(f"# {title}"))
+
+if HAVE_WIDGETS:
+    # Build a widget row per question
+    rows = []
+    answer_widgets = {}
+    for q in questions:
+        q_md = Markdown(f"**{q['question']}**")
+        opts = q["options"]
+        # RadioButtons takes options as a list of display strings; we’ll map back to keys.
+        # We'll show like "A) text", "B) text", etc.
+        opts_list = [f"{k}) {v}" for k, v in opts.items()]
+        rb = widgets.RadioButtons(options=opts_list, description="", layout=widgets.Layout(width="auto"))
+        answer_widgets[q["id"]] = rb
+        rows.append(Markdown(""))
+        rows.append(q_md)
+        rows.append(rb)
+
+    submit = widgets.Button(description="Submit Quiz", button_style="primary")
+    output = widgets.Output()
+
+    def on_submit(_):
+        with output:
+            output.clear_output()
+            score = 0
+            total = len(questions)
+            for q in questions:
+                chosen = answer_widgets[q["id"]].value
+                # chosen like "C) Weights/parameters...", we only need the letter before ')'
+                chosen_key = chosen.split(")")[0] if chosen else None
+                correct = q["answer"]
+                if chosen_key == correct:
+                    score += 1
+                    display(Markdown(f"✅ **Q:** {q['question']}  \n**Correct!** {q['explanation']}"))
+                else:
+                    display(Markdown(
+                        f"❌ **Q:** {q['question']}  \n**Correct answer:** {correct}. {q['explanation']}"
+                    ))
+            display(Markdown(f"## 🏁 Score: **{score} / {total}**"))
+            if score == total:
+                display(Markdown("🎉 Excellent! You’ve nailed the core ML concepts."))
+            elif score >= total * 0.6:
+                display(Markdown("👍 Good job! Revisit any missed explanations and try again."))
+            else:
+                display(Markdown("🧩 Keep practicing — review loss, gradients, and the update rule."))
+
+            if bonus:
+                display(Markdown("----"))
+                display(Markdown("### 💬 Bonus (open-ended)"))
+                for b in bonus:
+                    display(Markdown(f"- {b['prompt']}"))
+
+    submit.on_click(on_submit)
+    display(widgets.VBox(rows + [submit, output]))
+
+else:
+    # Fallback: simple input() loop
+    print("(ipywidgets not available — using basic input/print UI)\n")
+    score = 0
+    total = len(questions)
+    for q in questions:
+        print(q["question"])
+        for k, v in q["options"].items():
+            print(f"  {k}. {v}")
+        ans = input("Your answer (A/B/C/D): ").strip().upper()
+        if ans == q["answer"]:
+            score += 1
+            print("Correct!", q["explanation"])
+        else:
+            print(f"Incorrect. Correct answer: {q['answer']} — {q['explanation']}")
+        print("-" * 60)
+    print(f"Score: {score}/{total}")
+    if bonus:
+        print("\nBonus prompts:")
+        for b in bonus:
+            print(" -", b["prompt"])
