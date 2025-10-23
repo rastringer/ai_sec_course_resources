@@ -1,0 +1,75 @@
+{
+  "title": "Intro to ML — Knowledge Check",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What does a machine learning model actually learn?",
+      "options": {
+        "A": "The dataset itself",
+        "B": "A sequence of programming instructions",
+        "C": "Weights/parameters mapping inputs to outputs",
+        "D": "Random noise added during training"
+      },
+      "answer": "C",
+      "explanation": "The model learns numerical weights (parameters) that define how inputs are transformed into predictions."
+    },
+    {
+      "id": "q2",
+      "question": "What is the purpose of the loss function?",
+      "options": {
+        "A": "To generate random numbers",
+        "B": "To measure how far predictions are from actuals",
+        "C": "To visualize distributions",
+        "D": "To initialize parameters"
+      },
+      "answer": "B",
+      "explanation": "Loss (e.g., MSE) quantifies mistakes — smaller loss means better predictions."
+    },
+    {
+      "id": "q3",
+      "question": "Why is gradient descent more efficient than manual 'up/down/same'?",
+      "options": {
+        "A": "It skips loss computation",
+        "B": "It randomly changes parameters faster",
+        "C": "It uses gradients (direction & slope) to reduce error",
+        "D": "It auto-increases learning rate"
+      },
+      "answer": "C",
+      "explanation": "Gradients give the direction and steepness for fastest decrease in loss."
+    },
+    {
+      "id": "q4",
+      "question": "What does the learning rate (α) control?",
+      "options": {
+        "A": "Examples per step",
+        "B": "Step size in weight updates",
+        "C": "Model size",
+        "D": "Generalization on unseen data"
+      },
+      "answer": "B",
+      "explanation": "α controls the step size: too big overshoots, too small is slow."
+    },
+    {
+      "id": "q5",
+      "question": "In backpropagation, the chain rule is used to:",
+      "options": {
+        "A": "Shuffle data",
+        "B": "Compute each parameter’s contribution to total error",
+        "C": "Generate multiple models",
+        "D": "Keep loss non-negative"
+      },
+      "answer": "B",
+      "explanation": "Chain rule lets us trace how each parameter affects the final loss."
+    }
+  ],
+  "bonus": [
+    {
+      "id": "b1",
+      "prompt": "Your model has low training loss but high test loss. What's likely happening and how would you fix it?"
+    },
+    {
+      "id": "b2",
+      "prompt": "Given y_pred = w*x + b with loss (y_pred - y_true)^2, x=3, y_true=25, w=5, b=2, α=0.01 — compute one update step."
+    }
+  ]
+}
