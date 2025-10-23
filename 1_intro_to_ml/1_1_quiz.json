@@ -61,15 +61,5 @@
       "answer": "B",
       "explanation": "Chain rule lets us trace how each parameter affects the final loss."
     }
-  ],
-  "bonus": [
-    {
-      "id": "b1",
-      "prompt": "Your model has low training loss but high test loss. What's likely happening and how would you fix it?"
-    },
-    {
-      "id": "b2",
-      "prompt": "Given y_pred = w*x + b with loss (y_pred - y_true)^2, x=3, y_true=25, w=5, b=2, α=0.01 — compute one update step."
-    }
   ]
 }
